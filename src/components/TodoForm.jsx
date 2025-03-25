@@ -55,9 +55,9 @@ const TodoForm = ({ fetchTodos, todoToEdit, setTodoToEdit }) => {
       const updatedFormData = {...formData, due_date: formattedDate};      
 
       if (todoToEdit) {
-        await api.put(`/update/${todoToEdit.id}`, updatedFormData);
+        await api.put(`/${todoToEdit.id}`, updatedFormData);
       } else {
-        await api.post("/store", updatedFormData);
+        await api.post("", updatedFormData);
       }
 
       fetchTodos();

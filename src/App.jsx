@@ -24,7 +24,7 @@ const App = () => {
 
   const deleteTodo = async (id) => {
     try {
-      await api.delete(`/remove/${id}`);
+      await api.delete(`/${id}`);
       fetchTodos();
       setTodoToEdit(null);
     } catch (error) {
