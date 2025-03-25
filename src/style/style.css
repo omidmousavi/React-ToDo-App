@@ -1,0 +1,47 @@
+.todo{
+    padding: 10px;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin-top: -1px;
+}
+
+.todo-actions, .add-form{
+    display: flex;
+}
+
+.todo-title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 250px;
+}
+
+.add-form button, input, select {
+    padding: 10px;    
+    border: 1px solid gray;
+    outline: none;
+}
+
+.add-form button{
+    cursor: pointer;    
+}
+
+input{
+    width: 81px;
+}
+
+.react-datepicker__tab-loop{
+    display: inline-block;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    background-color: #ffe6e6;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+  }
