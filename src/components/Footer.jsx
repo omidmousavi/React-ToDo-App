@@ -15,7 +15,7 @@ const Footer = () => {
         fontFamily: 'monospace',
       }}>
 
-      <h2>A very very simple React ToDo list with API :)</h2>
+      <h2>A very simple React ToDo list with API :)</h2>
       <h3>Designed by <a style={{color:'white'}} href="https://github.com/omidmousavi" target="_blank">Omid Mousavi</a></h3>
     </div>
   );

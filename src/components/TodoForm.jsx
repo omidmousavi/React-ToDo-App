@@ -32,10 +32,7 @@ const TodoForm = ({ fetchTodos, todoToEdit, setTodoToEdit }) => {
   };
 
   const handleDateChange = (date) => {
-    setFormData({
-      ...formData,
-      due_date: date,
-    });    
+    setFormData({...formData, due_date: date});    
   };
 
   const handleSubmit = async (e) => {
@@ -61,11 +58,7 @@ const TodoForm = ({ fetchTodos, todoToEdit, setTodoToEdit }) => {
       }
 
       fetchTodos();
-      setFormData({
-        title: "",
-        due_date: new Date(),
-        status: "Pending",
-      });
+      setFormData({title: "", due_date: new Date(), status: "Pending"});
       setTodoToEdit(null);
     } catch (error) {
         setError(error.response?.data?.message || "An error occurred while saving the todo.");
